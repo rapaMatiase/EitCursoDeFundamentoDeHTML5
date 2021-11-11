@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .title{
+            margin-bottom: 7px; 
+            text-decoration: underline 2px green;
+        }
+
+        .strikethrough{
+            text-decoration: line-through red 3px;
+        }        
+
+        .highlighter{
+            background-color: yellow;
+        }
+
+        .doubleUnderline{
+            text-decoration: underline 1px double;
+        }
+
+        
+        .textDecotarionColorRed{
+            text-decoration-color: red;
+        }
+
+        .textDecotarionColorBlue{
+            text-decoration-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3> Lista de compras para el asado</h3>
+    <ul style="list-style: none;">
+        <li class="title">Verduleria </li>
+        <ul>
+            <li > 3kg de Tomate </li>
+            <li> 1kg de Zanahoria</li>
+            <li> 3Kg de Papa blanca</li>
+            <li> 1 Anana, <span class="highlighter"> pero linda </span> </li>
+        </ul>
+        <li class="title textDecotarionColorRed"> Carneceria </li>
+        <ul>
+            <li> 6 Chorizos </li>
+            <li class="strikethrough"> 1 Morcilla </li>
+            <li> Tapa de asado entre 2 a 3kg</li>
+            <li> Pollo <span class="doubleUnderline">mas o menos</span>  2kg</li>
+        </ul>
+        <li class="title textDecotarionColorBlue"> Supermercado </li>
+        <ol>
+            <li> Papel higenico</li>
+            <li class="strikethrough"> Servilletas </li>
+            <li> Pepsi </li>
+            <li class="strikethrough"> Cerveza </li>
+            <li> Vino </li>
+            <li> Papas fritas y Palitos salados </li>
+        </ol>
+    </ul>
+</body>
+</html>
