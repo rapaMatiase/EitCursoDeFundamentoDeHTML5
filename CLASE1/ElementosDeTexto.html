@@ -7,40 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <!-- Estos elementos se utilizan para modificar solo texto -->
+    <!-- Titulos -->
+    <h1> Titulo </h1>
+    <h2> Titulo </h2>
+    <h3> Titulo </h3>
+    <h4> Titulo </h4>
+    <h5> Titulo </h5>
 
-    <!-- Los H se utilizan para titulos -->
-    <h1> Titulo 1 </h1>
-    <h2> Titulo 2 </h2>
-    <h3> Titulo 3 </h3>
-    <h4> Titulo 4 </h4>
-    <h5> Titulo 5 </h5>
+    <!-- Parrafos -->
+    <p> Hola, como estas? </p>
 
-    <p>
-        Hola como estas?
-    </p>
-    <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fuga harum saepe recusandae expedita molestias quasi aliquid nesciunt amet. Voluptates iure illo vitae pariatur sapiente maxime saepe labore, obcaecati facilis!
-    </p>
-    <!-- La diferencia entre este parrafo y el anterio. Es que no esta dentro de un elemento en partiuclar. Por lo tanto, no puedo modificar su apariencia. -->
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid, pariatur, consequatur veritatis esse enim vero voluptate obcaecati qui illum vel laudantium accusantium velit nulla accusamus non cupiditate nihil. Assumenda!
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, ducimus! Pariatur accusantium ex impedit consequuntur explicabo enim animi nisi natus quod dolorum molestiae ipsa optio, quae quaerat numquam fugiat nostrum! </p>
+
     <pre>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, reiciendis? Vitae corporis minima maiores illo natus
-                blanditiis ipsum autem voluptas neque esse. Tenetur, dolorum voluptatem eaque illo enim non sequi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non totam dolorum animi quis enim ea facilis voluptates ducimus quia. A suscipit sint quis voluptatem vero nisi ad adipisci officiis.
     </pre>
-    <!-- El elemento P es para parrafo con estilo por defualt (copiar sin formato) y el PRE es para sin estilo por defualt (copiar con formato). -->
+
+    <!-- La diferencia entre P y PRE es que uno tiene un formato por defualt (P) y el otro no lo tiene (PRE). -->
     <pre>
         <code>
-            function Saludar(nombre){
-                reutrn nombre;
+            function Funcion(varialbe){
+                reutrn "Hola";
             }
         </code>
     </pre>
     <p>
-        function Saludar(nombre){
-            reutrn nombre;
-        }
+        <code>
+            function Funcion(varialbe){
+                reutrn "Hola";
+            }
+        </code>
     </p>
+    <!-- https://highlightjs.org/ -->
+
+    <!-- Los elementos de texto descriptos hasta aca, no aceptan otros elementos dentro exepto por el CODE para el PRE y elemento SPAN -->
+
+    <p> Hola coma <span>estas</span>  ?</p>
+
 </body>
 </html>
