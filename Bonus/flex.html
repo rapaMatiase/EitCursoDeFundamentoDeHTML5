@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        li{
+            padding: 5px;
+        }
+
+        li:nth-child(odd){
+            background-color: red;
+        }
+        li:nth-child(even){
+            background-color: rgb(38, 0, 255);
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li>ITEM1</li>
+        <li>ITEM2</li>
+        <li>ITEM3</li>
+        <li>ITEM4</li>
+    </ul>
+    <ul style="flex-direction: column;">
+        <li>ITEM1</li>
+        <li>ITEM2</li>
+        <li>ITEM3</li>
+        <li>ITEM4</li>
+    </ul>
+    <ul style="flex-direction: column-reverse;">
+        <li>ITEM1</li>
+        <li>ITEM2</li>
+        <li>ITEM3</li>
+        <li>ITEM4</li>
+    </ul>
+    <ul style="flex-direction: row-reverse;">
+        <li>ITEM1</li>
+        <li>ITEM2</li>
+        <li>ITEM3</li>
+        <li>ITEM4</li>
+    </ul>
+
+    <ul>
+        <li style="flex:1;">ITEM1</li>
+        <li style="flex:2;">ITEM2</li>
+        <li style="flex:2;">ITEM3</li>
+        <li style="flex:2;">ITEM4</li>
+    </ul>
+</body>
+</html>
