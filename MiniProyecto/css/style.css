@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+    color: white;
+    border: white 2px solid;
+    padding: 8px;
+    background-color: #00000070;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 0.596);
+    color: red;
+    border-color: red;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}

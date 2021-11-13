@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .inputText{
+            border: pink solid 1px;
+            margin: 3px;
+            padding: 3px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .inputText:focus{
+            outline: none;
+        }
+
+        .inputSubmit{
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        Dar estilo al formulario a gusto.
+        3min 10.37
+     -->
+
+    <form>
+        <input class="inputText" type="text" name="name" id="name" placeholder="Nombre">
+        <br>
+        <input class="inputText" type="text" name="lastname" id="lastname" placeholder="Apellido">
+        <br>
+        <input class="inputText" type="number" name="age" id="age" placeholder="Edad">
+        <br>
+        <input class="inputText" type="number" name="dni" id="dni" placeholder="DNI xxxxxxxx">
+        <br>
+        <input class="inputText" type="email" name="email" id="email" placeholder="mail">
+        <br>
+        <input class="inputText" type="checkbox" name="spam" id="spam" checked> <label for="spam"> Recibir novedades por email</label>
+        <br>
+        <input class="inputSubmit" type="submit" value="Enviar">
+    </form>
+</body>
+</html>
