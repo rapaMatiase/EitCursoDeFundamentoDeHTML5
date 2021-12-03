@@ -8,6 +8,7 @@
     <style>
         td{
             border: orange 2px solid;
+            text-align: center;
         }
     </style>
 </head>
@@ -15,39 +16,27 @@
     <!-- Modificar la tabla para que se vea como el croquis. 3min 12.04-->
     <table>
         <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-            <td>E</td>
+            <td colspan="4">A</td>
+            <td rowspan="5">B</td>
         </tr>
         <tr>
             <td>F</td>
-            <td>G</td>
-            <td>H</td>
-            <td>I</td>
-            <td>J</td>
+            <td rowspan="2">G</td>
+            <td colspan="2">H</td>
         </tr>
         <tr>
             <td>K</td>
-            <td>L</td>
+            <td rowspan="2">L</td>
             <td>M</td>
-            <td>N</td>
-            <td>O</td>
         </tr>
         <tr>
             <td>P</td>
             <td>Q</td>
             <td>R</td>
-            <td>S</td>
-            <td>T</td>
         </tr>
         <tr>
-            <td>U</td>
-            <td>W</td>
-            <td>V</td>
-            <td>X</td>
-            <td>Z</td>
+            <td colspan="2">U</td>
+            <td colspan="2">W</td>
         </tr>
     </table>
 </body>

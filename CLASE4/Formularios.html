@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        El atributo METHOD indica el mode de envio. GET (DEFUALT) o POST 
+        El atributo ACTION indica quien lo recibe. 
+    -->
+    <form method="GET" action="">
+        <!-- Si el campo no esta aca dentro, no viaja!! -->
+
+        <!-- Los INPUT con el valor TEXT para el atributo TYPE son para ingresar textos cortos. -->
+        <label for="username"> Nombre usuario</label>
+        <input type="text" id="username" name="username">
+
+        <br><br><!-- MUY MALA PRACTICA LA DEL BR -->
+
+        <!-- Los INPUT con el valor PASSWORD para el atributo TYPE son para ingresar textos cortos ocultos.-->
+        <label for="password"> Contraseña </label>
+        <input type="password" id="password" name="password">
+
+        <br><br>
+        
+        <!-- Los INPUT con el valor NUMBER para el atributo TYPE son para ingresar texto cortos compuesto solo por numeros y la e para exponente.-->
+        <label for="cell">Celular</label>
+        <input type="number" name="cell" id="cell">
+
+        <br><br>
+
+        <!-- La forma de crear un GRUPO DE RADIO BUTTOMS es utilizando un unico nombre. -->
+        <!-- Los INPUT con el valor RADIO para el atributo TYPE son para crear una lista de opciones y solo permitir al usuario seleccionar una unica opcion.-->
+        <input type="radio" name="sexo" id="hombre" value="h">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" id="mujer" value="m">
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="sexo" id="otros" value="o">
+        <label for="otros">Otros</label>
+
+        <br><br>
+
+        <input type="checkbox" name="terminos" id="terminos" value="terminos" checked>
+        <label for="terminos"> Usted acepta terminos y condiciones</label>
+
+        <br><br>
+        <!-- Los INPUT con el valor SUBMIT para el atributo TYPE crea un boton que permite el envio del formulario.-->
+        <input type="submit" value="">
+    </form>
+</body>
+</html>
