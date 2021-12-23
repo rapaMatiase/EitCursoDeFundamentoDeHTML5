@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ELEMETNO STYLE !!!! DISTINTO AL ATRIBUTO STYLE -->
+    <style>
+        /* ACA 100% CSS - NADA DE HTML <> */
+
+
+        /* 
+        selector{
+            propiedad1 : valor1;
+            propiedad2 : valor2;
+            ...
+        }
+
+        selector es una regla que permite seleccionar uno o varios elementos a la vez, y aplicar el estilo entre {}
+        */
+
+        /* Selecto de clase */
+        .azul{
+            color: violet;
+        }
+        /* Es necesario utilizar el atributo class */
+
+        .subrayada{
+            text-decoration: red underline 2px;
+            color: red;
+        }
+
+        .verde{
+            color: green;
+        }
+
+        /* Los nombres de los selectores;
+        - NO pueden tener espacios
+        - NO pueden iniciar con numeros
+        - NO pueden contener caracteres especiales excepto por - y _
+        
+        La buena practica en notaciones de los nombres con mas de una palabra en el mismo son;
+        camelCase <- Nosotros vamos a utiliza esta
+        PascalCase
+        keb-case
+        snake_case
+
+        Ejemplos;
+
+        resaltado rojo -> reslatadoRojo, resaltado-rojo, resaltado_rojo
+        texto con negrita y color azul -> textoNegritaAzul, texto-negrita-azul, texto_negrita_azul.
+
+        CSS METHODOLY ARQUITECTURE --> Las formas de estructurar los estilos para que sean mantenibles y escalables. 
+        BEM (Block Element Modifity)
+        ATOMIC
+        */
+
+        /* ACA 100% CSS */
+    </style>
+</head>
+<body>
+    <!-- p{texto}*3 -->
+    <p class="azul" >Hola, quien me seleccion?</p>
+    <p class="subrayada">Hola, quien me seleccion?</p>
+    <p class="subrayada azul ">Hola, quien me seleccion?</p>
+    <p class="verde" >Hola, quien me seleccion?</p>
+
+</body>
+</html>

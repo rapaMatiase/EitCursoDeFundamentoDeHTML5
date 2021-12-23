@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ACA ES 100% CSS */
+        .tituloVerde{
+            list-style-type: none; 
+            text-decoration: underline green;
+        }
+
+        .tituloRojo{
+            list-style-type: none; 
+            text-decoration: underline red;
+        }
+
+        .tituloAzul{
+            list-style-type: none; 
+            text-decoration: underline blue;
+        }
+
+
+        .resaltado{
+            background-color: yellow;
+        }
+
+        .tachado{
+            text-decoration: line-through red  3px;
+        }
+
+        .doble{
+            text-decoration: underline black double;
+        }
+    </style>
+</head>
+<body>
+    <h3> Lista de compras para el asado</h3>
+    <ul>
+        <li class="tituloVerde">Verduleria</li>
+        <ul>
+            <li>3kg de Tomate</li>
+            <li>1Kg de Zanahorias</li>
+            <li>3Kg de Papa</li>
+            <li>1 Anana, <span class="resaltado">pero linda</span> </li>
+        </ul>
+        <li class="tituloRojo">Carneceria</li>
+        <ul>
+            <li>6 Chorizos</li>
+            <li class="tachado">1 Morcilla</li>
+            <li>Tapa de asado entre 2 a 3kg</li>
+            <li>Pollo <span class="doble">mas o menos</span>  2kg</li>
+        </ul>
+        <li class="tituloAzul">Supermercado</li>
+        <ul >
+            <li>Papel higenico</li>
+            <li class="tachado">Servilletas</li>
+            <li>Pepsi</li>
+            <li class="tachado">Cerveza</li>
+            <li>Vino</li>
+            <li>Papas fritas y palitos salados</li>
+        </ul>
+    </ul>
+</body>
+</html>
