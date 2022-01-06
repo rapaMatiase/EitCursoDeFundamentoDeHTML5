@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        a{
+            /* Anulo el subrayado */
+            text-decoration: none;
+            /* Cambio el color de letra */
+            color: black;
+            /* Cambio tipografia */
+            font-family: 'Roboto', sans-serif;
+            /* Fondo de color */
+            background-color: tomato;
+            /* Los engordo */
+            padding: 10px;
+            /* Los separo */
+            margin: 10px 10px;
+            /* Agrego un borde */
+            border : solid black 2px;
+        }
+
+        /* selecto:pseudoclase{
+            propiedades ...
+        } */
+
+        a:hover{
+            background-color: black;
+            color: tomato;
+            border-color: tomato;
+        }
+        img{
+            height: 220px;
+        }
+
+        header{
+            text-align: center;
+        }
+
+        h1{
+            font-family: 'Roboto', sans-serif;
+            margin: 40px;
+            /* Linea de arriba */
+            border-top: solid gray 3px ;
+            /* Linea de abajo */
+            border-bottom: solid gray 3px ;
+            /* Agrando el espacio entre las lineas y el texto */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/taza.png" alt="Logo de cafeteria">
+        <h1> El cafe modolovia</h1>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact</a>        
+        </nav>
+    </header>
+</body>
+</html>
