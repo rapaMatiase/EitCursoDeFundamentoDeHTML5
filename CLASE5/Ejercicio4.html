@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+        body{
+            background-color: #F0F2F5;
+            text-align: center;
+            
+        }
+        div{
+            background-color: white;
+            border-radius: 3px;
+            border: solid #FFFFFF 1px;
+            -webkit-box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.98); 
+box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.98);
+    font-family: 'Roboto', sans-serif;
+        }
+
+        h2{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            margin: 0px;
+        }
+
+        p{
+            margin: 0px;
+        }
+
+        .pCondiciones{
+            font-size: 5px;
+            color: #77778D;
+        }
+
+
+        .inputButton{
+            background-color: green;
+            border: none;
+            border-radius: 3px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Aplicar todas los propiedades que consideren necesarais para dar un estilo lo mas parecido posible a esta pag con respecto a la de fabook.
+    https://www.facebook.com/campaign/landing.php?&campaign_id=1653388260&extra_1=s%7Cc%7C318309252370%7Ce%7Cfacebook%20%27%7C&placement=&creative=318309252370&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D1653388260%26adgroupid%3D61874672325%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-360705453827%26loc_physical_ms%3D1000073%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=EAIaIQobChMIueDc0qat9QIVT5JmAh2hfg6qEAAYASAAEgKrdPD_BwE
+-->
+    
+    <img src="Img/facebook.svg" alt="logo de facebook">
+
+    <div>
+        <h2> Crea una cuenta</h2> 
+        <p>Es rapido y facil</p> 
+        <form action="">
+
+        <input type="text" name="name" placeholder="Nombre">
+        <input type="text" name="lastname" placeholder="Apellido">
+        <input type="text" name="emailPhone" placeholder="Numero de movil o correo electronico">
+        <!-- option[value="$$"]{$$}*30 -->  
+        <input type="passwrod" placeholder="Contraseña nueva">
+
+        <h5>Fecha de nacimiento</h5>
+        <select name="day">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+        </select>
+        <select name="month">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+        <select name="year">
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+        </select>
+        <h5>Genero</h5>
+        <label for="men">Hombre</label>
+        <input type="radio" name="sexo" id="men" value="01">
+        <label for="women">Mujer</label>
+        <input type="radio" name="sexo" id="women" value="02">
+        <label for="others">others</label>
+        <input type="radio" name="sexo" id="others" value="03">
+        <p class="pCondiciones">Al hacer clic en Registrarte, aceptas las Condiciones, la Política de datos y la Política de cookies. Es posible que te enviemos notificaciones por SMS que podrás desactivar cuando quieras.</p>
+        <input class="inputButton"type="submit" value="Registrar">
+    </form>
+    <a href="">¿Ya tienes una cuenta?</a>
+</div>
+</body>
+</html>

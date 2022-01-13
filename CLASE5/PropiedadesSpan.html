@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: orange solid 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>ColSpan</h3>
+    <p>Colspan me permite alargar las celdas para que ocupen dos o mas columnas. Simpre crece hacia la derecha</p>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td colspan="2">C</td>
+        </tr>
+    </table>
+    <h3>RowSpan</h3>
+    <p> Rowspan me permite alargar las celdas para que ocupen dos o mas Filas. Simpre crece hacia abajo.</p>
+    <table>
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+    <h3>Tamaño maximo</h3>
+    <p> ¿Cuan grande puede ser un celda?</p>
+    <table>
+        <tr>
+            <td rowspan="1000">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+</body>
+
+</html>

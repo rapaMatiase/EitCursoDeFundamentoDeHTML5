@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+        <!-- Este el atributo placeholder permite dejar una ejemplo al usaurio en el formaulario con un texto que se borra solo almomento de escribir.
+        Lo tienen basicamente todos los input de ingreso de texto. password, email, number, textarea, ect. -->
+
+        <!-- Los atriubtos MAXLENGTH y MINLENGHT nos permiten obligar al usuario ingresar un minimo y maximo de caracteres en el campo de texto. No aplica para los input:number. -->
+
+        <!-- El atributo REQUIRED hace obligatorio el completar un campo. Tambien tiene la caracteristica de ser un campo booleano. Osea escibir required o required="required" es igual. -->
+        <input type="text" name="usernaem" placeholder="Nombre de usuario" maxlength="5" minlength="2" required>
+
+        <!-- Los atributos MAX y MIN me limitan el ingreso del usuario pero en magnitud. No controlan cantidad de caracteres, si no que el numero ingresado no sea menor o inferior a los limtes escritos con max y min. -->
+
+        <input type="number" name="" id="" max="100" min="1">
+
+        <!-- El atributo booleano CHECKED hace que el input este seleccionado por defualt.  -->
+        <input type="checkbox" checked> <label for=""> Acepto que usen mi tarjeta de credito sin permiso.</label>
+        
+        <!-- El mismo atributo booleano CHECKED se puede utilizar para los INPUT:RADIO pero con la diferencia de que deberia solo aplicarlo a uno por cada grupo de radio buttons. 
+        
+        Si intento aplicarlo en mas de uno por grupo, el unico que queda marcado es el ultimo input:Radio del grupo donde aparece el atributo.-->
+        <input type="radio" name="sexo" checked> <label for="">women</label>
+        <input type="radio" name="sexo" > <label for="">men</label>
+        <input type="radio" name="sexo" > <label for="">othoer</label>
+
+        <!-- El atributo SELECT funciona igual que el CHECKED pero es para los elemetos SELECT y se aplica la misma logia que los radio. Solo uno deberia estar seleccionado de ante mano. -->
+        <label for="paisX">Pais</label>
+        <select name="pais" id="paisX">
+            <option value="01"> Argentian</option>
+            <option value="02"> Uruguay</option>
+            <option value="03" selected> Paraguay</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>

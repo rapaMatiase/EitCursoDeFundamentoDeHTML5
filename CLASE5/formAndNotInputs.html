@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Aunque la mayoria de los elementos de un formulario son del tipo INPUT, exite alguno elementos que no los. -->
+    <form action="">
+
+        <!-- El TEXTAREA es un elemento que permite el ingreso de textos largos. -->
+
+        <label for="reclamoX">Reclamo</label>
+        <textarea name="reclamo" id="reclamoX" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <!-- El SELECT nos permite crear una lista desplegable de opciones. -->
+
+        <label for="paisX">Pais</label>
+        <select name="pais" id="paisX">
+            <option value="01"> Argentian</option>
+            <option value="02"> Uruguay</option>
+            <option value="03"> Paraguay</option>
+        </select>
+
+
+        <!-- El INPUT del tipo SUBMIT es el boton del final de un formulario que hace el envio al backend. El atributo VALUE en este caso, representa el texto que se vera en el boton.-->
+    <input type="submit" value="Enviar">
+</form>
+
+    </form>
+</body>
+</html>
