@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* BEM - Bloque Elemento Modificador */
+
+        /* bloque_elemento-modificador */
+
+        .cardItem{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+
+        .cardItem_titleContainer{
+            display: flex;
+        }
+
+        .cardItem_title{
+            font-size: 1.2rem;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: green;
+        }
+
+        .cardItem_title-colorRed{
+            color: red;
+        }
+
+        .cardItem_title:hover{
+            color: white;
+            background-color: green;
+        }
+
+        .cardItem_parraf{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .cardItem_footerContainer{
+            display: flex;
+        }
+        
+        .cardItem_footerTitle{
+            font-size: .8rem;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: green;
+        }
+
+        .cardItem_footerTitle:hover{
+            color: white;
+            background-color: green;
+        }
+    </style>
+</head>
+<body style="display: flex; justify-content: center; align-items: center;">
+    
+    <!-- BLOQUE CARD ITEM -->
+    <div class="cardItem">
+        <div class="cardItem_titleContainer">
+            <a class="cardItem_title ">Titulo de tarjete</a>
+        </div>
+        <img src="Img/Bebidas_tcm103-49602_w1024_n.jpg" alt="">
+        <p> Asombrosos cafés de todo el mundo. Bebidas elaboradas artesanalmente para descubrir y paladear. Nos encanta traerte todas estas cosas.</p>
+        <div class="cardItem_footerContainer">
+            <a href="" class="cardItem_footerTitle"> Bebidas de starbucks</a>
+        </div>
+    </div>
+    <!-- BLOQUE CARD ITEM -->
+
+
+</body>
+</html>

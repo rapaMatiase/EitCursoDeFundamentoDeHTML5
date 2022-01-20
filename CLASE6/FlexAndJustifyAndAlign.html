@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            height: 40px;
+            width: 40px;
+            border: solid 2px black;
+            background-color: orange;
+        }
+
+        /* Con aling no hay opciones; arriba (flex-start), en el medio (center) o abajo (flex-end) */
+        .centrar{
+            /* De arriba a bajo */
+            align-items: center;
+            /* De Iza a derecha */
+            justify-content: center;
+        }
+        /* Con justify-content se complica un poco mas... 
+
+        Tengo las mismas que con align
+        - Al principio (flex-start)
+        - Al medio (center)
+        - Al final (flex-end)
+
+        Tengo unas especiales con espacio alrededor.
+
+        - space-between
+        - space-around
+        - space-evently
+        */
+    </style>
+</head>
+<body>
+    
+    <article class="centrar" style="display: flex; height: 300px; width: 300px; background-color: red;">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </article>
+    
+    <article style="display: flex; height: 100px; width: 300px; background-color: red; justify-content: space-between;">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </article>
+    <article style="display: flex; height: 100px; width: 300px; background-color: rgb(21, 34, 70); justify-content: space-around;">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </article>
+    <article style="display: flex; height: 100px; width: 300px; background-color: rgb(70, 31, 31); justify-content: space-evenly;">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </article>
+    <h4>Justify-content y flex no son compatibles</h4>
+    <article style="display: flex; height: 100px; width: 300px; background-color: rgb(70, 31, 31); justify-content: space-around;">
+        <section style="flex:1;"></section>
+        <section style="flex:1;"></section>
+        <section style="flex:1;"></section>
+        <section style="flex:1;"></section>
+        <section style="flex:1;"></section>
+    </article>
+
+</body>
+</html>

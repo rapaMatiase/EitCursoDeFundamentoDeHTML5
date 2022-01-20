@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cardInfo{
+            display: flex;
+            flex-direction: column;
+            border: solid grey 1px;
+            border-radius: 10px;
+        }
+        .cardInfo_header{
+            display: flex;
+            padding: 10px;
+        }
+
+        .cardInfo_headerTitles{
+            flex: 8;
+        }
+
+        .cardInfo_headerIcon{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cardInfo_body{
+            display: flex;
+            padding: 10px;
+            flex-direction: column;
+        }
+
+        /* COMPONENETE DIVIDER */
+
+        .divider{
+            width: 100%;
+            border-top: solid 2px gray;
+        }
+
+        /* COMPONENTE ITEM */
+        .item{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin: 0.4rem 0.4rem;
+        }
+
+        .item_header{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<!-- PASO 1 - Pongo todos los elementos. -->
+<body style="display: flex; justify-content: center; align-items: center;">
+    
+    <div class="cardInfo">
+        <div class="cardInfo_header">
+            <div class="cardInfo_headerTitles">
+                <h1>La Nacion</h1>
+                <h5>Periodico</h5>    
+            </div>
+            <div class="cardInfo_headerIcon">
+                <img src="Img/share.png" style="width: 20px;" alt="">
+            </div>
+        </div>
+        <div class="divider"></div> <!-- ESTE VA SER EL BORDE -->
+        <div class="cardInfo_body">
+            <p>La Nación es un tradicional periódico argentino de la Ciudad de Buenos Aires y de la empresa propietaria. La expresión también es parte del nombre del canal de televisión La Nación + y de la tarjeta Club La Nación. <a href="">Wikipedia</a></p>
+            <p class="item"><span class="item_header">precio:</span> $90 (Luneas a viernes); $120 (Sabados);$150(Domingos)</p>
+            <p class="item"><span class="item_header">Circulación</span>: Nacional</p>
+            <p class="item"><span class="item_header">Tirada:</span> 90 365</p>
+            <p class="item"><span class="item_header">Ideología política:</span> Liberalismo conservador​; Liberalismo​; Conservadurismo</p>
+            <p class="item"><span class="item_header">Pais</span>: Argentina</p>
+            <p class="item"><span class="item_header">Fundado(a):</span> Bartolome Mitre</p>
+            <p class="item"><span class="item_header">Tipo</span>:diario</p>
+        </div>
+        
+    </div>
+</body>
+</html>
