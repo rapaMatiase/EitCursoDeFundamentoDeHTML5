@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            height: 100%;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            background-color: white;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+        }
+        /* 4MIN 20.06 */
+
+        .box_head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .box_head_title{
+            margin:0.5rem ;
+        }
+
+        .box_headIcon{
+            height: 1rem;
+        }
+
+        .box_boton{
+            text-decoration: none;
+            background-color: blue;
+            color: white;
+            border-radius: 3px;
+            padding: 8px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+
+        }
+
+        .box_boton-colorGray{
+            background-color: whitesmoke;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="box_head">
+            <h3 class="box_head_title">Modal title</h3>
+            <img class="box_headIcon" src="Img/close.png" alt="">
+        </div>
+        <p>This is a modal sheet, a variation of the modal that docs itself to the bottom of the viewport like the newer share sheets in iOS.</p>
+        <a href="" class="box_boton">Save changes</a>
+        <a href="" class="box_boton box_boton-colorGray">Close</a>
+    </div>
+</body>
+</html>

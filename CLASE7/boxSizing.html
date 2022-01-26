@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sinBox{
+            height: 80px;
+            background-color: violet;
+            width: 300px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .conBox{
+            height: 80px;
+            background-color: violet;
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 2px solid black;
+        }
+
+        /* 
+        Por defualt todos los elementos tiene 
+        box-sizing : content-box;
+        ANCHO TOTAL = WIDTH + PADDING + BORDER
+        
+        box-sizing : border-box;
+        WIDTH =  PADDING + BORDER + X
+        Donde X es lo que sobra de restar al ancho el padding y border.
+        
+
+        EL MARGIN NO ENTRA EN ESTA PROPIEDAD.
+
+        */
+    </style>
+</head>
+<body>
+    <div class="sinBox"></div>
+    <div class="conBox"></div>
+
+</body>
+</html>
