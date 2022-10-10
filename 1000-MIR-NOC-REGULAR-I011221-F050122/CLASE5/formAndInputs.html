@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- un FORM es un ELEMENTO de HTML que tiene la finalidad de agrupar valores ingresados por el usuario, compactarlos y enviarlos al backend. -->
+
+    <!-- Si mis campos no estan dentro de un FORM no son parte de ningun formulario. -->
+    <form action="" method="">
+        <!-- Todo lo que esta aca dentro es un formulario que se envia todo junto. -->
+
+        <!-- Todos los formularios tiene dos ATRIBUTOS minimos como para funcionar;
+        
+            - El atributo ACTION me determina quien se hace cargo de procesar la informacion enviada en el backend. 
+            login.php 
+            url/login/
+
+            - El atributo METHOD que determina el como se va enviar esa informacion al backend.
+            Puede ser POST o GET. La diferencia es GET es visible, POST no lo es. Por default el metodo tiene valor GET.
+    -->
+
+
+    <!-- Los elementos INPUT del TYPE TEXT son para ingreso de texto cortos. Por ejemplo; nombre usuario, nombre propio, apellido, direccion. 
+    NO EMAIL, NO PASSWORD -->
+
+    <!-- El atributo NAME me permite darle un nombre al dato ingresado por el usuario, para que al momento de enviarlo, sea facil identificar cada campo llenado. Por ejemplo se va enviar username=Matias. 
+    
+        Los valores en el ATRIBUTO NAME no pueden tener espacios, acentos y ñ. La mejor practica es utilizar nombres en ingles.
+    -->
+    <label for="usernameX"> Nombre de usuario</label>
+    <input type="text" name="username" id="usernameX">
+
+    <br><br>
+
+    <!-- Los elementos INPUT del TYPE PASSWORD son para ingreso de texto cortos ocultos. Por ejemplo; Una contraseña. -->
+    <label for="passwordX"> Contraseña </label>
+    <input type="password" name="password" id="passwordX">
+
+    <br><br>
+    <!-- El valor en el atributo NAME puede repetirse en una pag. Por ejemplo, si tengo dos formularios; uno para el login, otro para el signin. Ambos tiene el campo username. El valor que no se debe repetir es el del atributo ID. -->
+
+
+    <!-- El INPUT del tipo EMAIL es para ingreso de textos cortos con formato de email. Un @ y dominio.com o alguna otra extension. No controla si existe, solo si tiene pinta de email. -->
+    <label for="emailX">Mail</label>
+    <input type="email" name="email" id="emailX">
+
+    <br><br>
+
+    <!-- El INPUT del tipo NUMBER es para ingreso de textos cortos numericos (solo conformados por caracteres numericos). -->
+
+    <label for="ageX">Edad</label>
+    <input type="number" name="age" id="ageX">
+
+    <br><br>
+
+    <!-- El INPUT del tipo RADIO es para seleccionar un de multiples opciones. Si se le da el mismo nombre a variso INPUT:RADIO, estos forma un solo grupo y navegador entiende que solo uno de estos puede estar seleccionado a la vez. Solo se envia el valor del seleccionado al backend. -->
+
+    <!-- El INPUT del tipo RADIO como otro INPUTS requeire del atributo VALUE para definir el valor que se enviara al backend. Este valor es definido por los desarrolladores. -->
+
+    <h3>Sexo</h3>
+    <input type="radio" name="sexo" id="menX" value="m">
+    <label for="menX">Masculino</label>
+    <input type="radio" name="sexo" id="womenX" value="w">
+    <label for="womenX">Femenico</label>
+    <input type="radio" name="sexo" id="otherX" value="o">
+    <label for="otherX">Otros</label>
+    <br><br>
+
+    <!-- El INPUT del tipo CHECKBOX es para que usuario pueda seleccionar multiples valores a la vez. -->
+
+    <h3>Hobby</h3>
+    <p>Elija 3 Hobbys de la lista de abajo.</p>
+    <input type="checkbox" name="hobby" id="baile" value="01">
+    <label for="baile">Baile</label>
+    <input type="checkbox" name="hobby" id="cocina" value="02">
+    <label for="cocina">Cocina</label><input  type="checkbox" name="hobby" id="Futbol" value="03">
+    <label for="Futbol">Futbol</label><input type="checkbox" name="hobby" id="correr" value="04">
+    <label for="correr">Correr</label>
+    <br><br>
+
+    <!-- El INPUT del tipo SUBMIT es el boton del final de un formulario que hace el envio al backend. El atributo VALUE en este caso, representa el texto que se vera en el boton.-->
+    <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Obvio que podemos tener tantos formularios como queramos, cada uno es independiente del otro, pero no es una buena practica tener un form dentro de otro. -->
+</body>
+</html>

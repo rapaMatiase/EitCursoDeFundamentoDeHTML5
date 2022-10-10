@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- PASO 5 
+Utilizar la propiedad flex en los a para lograr que ocupen un espacio equitativo en la pantalla.   2min 20.05 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+        
+        a{
+            font-family: 'Roboto', sans-serif;
+            color: #1E1E1E;
+            text-decoration: none;
+            font-weight: 300;
+            flex:1;
+            height: 2rem;
+        }
+
+        a:hover{
+            background-color: #1E1E1E;
+            color: #F7F7F7;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header style="display: flex; background-color: #F7F7F7;">
+        <div style="flex:1;">
+            <img  src="Img/logo_tcm103-366_w1024_n.png" alt="Logo">
+        </div>
+        <div style="display: flex; flex-direction: column; flex: 9;">
+            <div style="display: flex; flex-direction: row-reverse;align-items: center;">
+                <p style="color: #8C8C9C;">Buscador de tiendas</p>
+                <img style="height: 1.2rem;" src="Img/maps-and-flags.png" alt="maps">
+            </div>
+            <nav style="display: flex; text-align: center;">
+                <a href="">Cafe</a>
+                <a href="">Productos</a>
+                <a href="" style="flex:2;">Responsabilidad social</a>
+                <a href="">starbucks</a>
+                <a href="">blog</a>
+                <a href="">Card</a>
+                <a href="" style="flex:2;">Historia de starbucks</a>
+            </nav>
+        </div>
+    </header>
+</body>
+
+</html>

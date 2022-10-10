@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            display: flex;
+        }
+
+        section{
+            height: 50px;
+            width: 50px;
+            background-color: orange;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Con la propiedad display pode default</h2>
+    <article>
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </article>
+    <h2>Con flex con la configuracion por defualt</h2>
+    <p>Flex por defualt me ordena los elementos de izquierda a derecha con formato de fila. Acomodando los items lo mas a la izquierda posible</p>
+    <article class="conteiner">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </article>
+    <h3>Puedo cambiar direccion</h3>
+    <p>Con flex-direccion podemos cambiar el valor por default (row) por;</p>
+    <h5>flex-direccion: row-reverse;</h5>
+    <article class="conteiner" style="flex-direction: row-reverse;">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </article>
+    <h5>flex-direccion: column;</h5>
+    <article class="conteiner" style="flex-direction: column;">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </article>
+    <h5>flex-direccion: column-reverse;</h5>
+    <article class="conteiner" style="flex-direction: column-reverse;">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+    </article>
+</body>
+</html>

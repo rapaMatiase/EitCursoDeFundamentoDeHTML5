@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subrayadoVerde{
+            text-decoration: green solid underline;
+        }
+
+        .resaltadoColorAmarillo{
+            background-color: yellow;
+        }
+
+        .tachadoRojo{
+            text-decoration:  line-through solid 3px red;
+        }
+
+        .dobleSubrayadoNegro{
+            text-decoration: underline black double ;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tranformar los estilos en los ATRIBUTOS STYLE en CLASES EN EL ELEMENTO STYLE. -->
+    <!-- 3min 10.15AM -->
+    <h3>Lista de compras para el asado</h3>
+    
+    <ul style="list-style-type: none;">
+        <li class="subrayadoVerde">Verduleria</li>
+        <ul>
+            <li>3kg de Tomate</li>
+            <li>1kg de Zanahoria</li>
+            <li>3Kg de Papa</li>
+            <li>1 Anana, <span class="resaltadoColorAmarillo">pero linda</span> </li>
+            <!-- <li>1 Anana, span[style="backgournd-color=yellow;"]{pero linda} </li> -->
+        </ul>
+        <li class="subrayadoVerde">Carniceria</li>
+        <ul>
+            <li>6 Chorizos</li>
+            <li class="tachadoRojo">1 Morcilla</li>
+            <li>Tapa de asado entre 2 a 3kg</li>
+            <li>Pollo <span class="dobleSubrayadoNegro">mas o menos</span> 2kg</li>
+        </ul>
+        <li class="subrayadoVerde">Supermercado</li>
+        <ol>
+            <li>Papel higenico</li>
+            <li class="tachadoRojo">Servilletas</li>
+            <li>Pepsi</li>
+            <li class="tachadoRojo">Cerveza</li>
+            <li>Vino</li>
+            <li>  Papas fritas y Palitos salados</li>
+        </ol>
+    </ul>
+
+</body>
+</html>

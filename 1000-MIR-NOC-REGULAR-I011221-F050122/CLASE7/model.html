@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        
+        html, body{
+            height: 100%;
+            margin: 0px;
+            background-color: gray;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal{
+            background-color: white;
+            border-radius: 10px;
+            font-family: 'Roboto', sans-serif;
+            width: 400px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .modal_body{
+            padding: 25px;
+        }
+
+        .modal_divisor{
+            border-top: gray solid 1px;
+        }
+
+        .modal_divisor_verticual{
+            border-right: gray solid 1px;
+
+        }
+
+        .modal_botonera{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        .modal_boton{
+            padding: 20px;
+            color: rgb(32, 97, 122);
+        }
+
+        .modal_boton_main{
+            font-weight: bold;
+        }   
+    </style>
+</head>
+<body>
+    
+    <div class="modal">
+        <div class="modal_body">
+            <h1>Enable this setting?</h1>
+            <p>You can always change your main in your accont settings.</p>
+        </div>
+        <div class="modal_divisor"></div>
+        <div class="modal_botonera">
+            <a class="modal_boton modal_boton_main" href="">Yes, enable</a>
+            <div class="modal_divisor_verticual"></div>
+            <a class="modal_boton" href="">No thanks</a>
+        </div>
+    </div>
+
+</body>
+</html>

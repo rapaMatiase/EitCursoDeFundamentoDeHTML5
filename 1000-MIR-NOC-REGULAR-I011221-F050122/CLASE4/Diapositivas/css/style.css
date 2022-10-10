@@ -1,0 +1,41 @@
+/* 100 CSS - NADA DE HTML */
+
+/* Methodology  CSS 
+BEM - Bloque Element Modify
+ATOMIC -> Bootstrap, Taiwless
+...
+*/
+
+a{
+    /* Saco el subrallado */
+    text-decoration: none;
+    /* Cambio el color */
+    color: white;
+    /* Agrandamos el tamaño */
+    font-size: 40px;
+    /* Le agreamos negrita */
+    font-weight: bold;
+    /* Fondo de color trasparente para no tapar la imagen */
+    background-color: rgba(2, 2, 2, 0.472);
+    /* Regordete el boton */
+    padding: 30px;
+    /* Borde */
+    border: white solid 2px;
+    /* Redonde el borde */
+    border-radius: 20px;
+    /* Lo separo de arriba */
+    margin-top: 50px;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+.izq{
+    float: left;
+}
+
+.der{
+    float: right;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+        a{
+            /* Anulo el subrayado */
+            text-decoration: none;
+            /* Cambio el color de letra */
+            color: black;
+            /* Cambio tipografia */
+            font-family: 'Roboto', sans-serif;
+            /* Fondo de color */
+            background-color: tomato;
+            /* Los engordo */
+            padding: 10px;
+            /* Los separo */
+            margin: 10px 10px;
+            /* Agrego un borde */
+            border : solid black 2px;
+        }
+
+        /* selecto:pseudoclase{
+            propiedades ...
+        } */
+
+        a:hover{
+            background-color: black;
+            color: tomato;
+            border-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="">Home</a>
+            <a href="">About us</a>
+            <a href="">Contact</a>        
+        </nav>
+    </header>
+
+    <!-- En realidad la estructura de un nav va ser la siguiente -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- La ultima clase vemos como acomodar bien los elementos detro de ul para armar el menu de hamburgesa  -->
+</body>
+</html>
