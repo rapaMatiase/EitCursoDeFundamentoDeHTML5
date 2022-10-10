@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ELEMENTO STYLE -->
+    
+    <style>
+        /* 100% CSS, NO HAY ELEMENTOS DE HTML ACA DENTRO */
+        
+        /* LA FORMA GENERICA DE TODOS LOS SELECTORES ES LA SIGUIENTE;
+        selector{
+            propiedad1: valor;
+            propiedad2: valor;
+            ...
+        }
+        */
+
+        /* EL SELECTOR DE CLASE */
+        /* 
+        .nombreDeClase{
+            propiedad1 : valor1;
+            propiedad2 : valor2;
+            ...
+        }
+
+        El nombre lo defino YO, pero con algunas reglas;
+        - No acepta espacios, ni caracteres especiales excepto el guion medio (-).
+        Ejemplo NO validos; nombre deClase, nombre de clase.
+        Ejemplos validos; nombredeclase, nombreDeClase, nombre-de-clase.
+        
+        - No comenzar con numeros, ni el guin medio (-), pero puede contenerlos en cualquier otra parte.
+        Ejemplos NO validos; 1nombre, -nombre, 12nombre-2.
+        Ejemplos validos; nombre1, n1ombre, n1, n-1.
+
+        BUENA PRACTICA: 
+        camelCase -> nombreDeClase
+        PascalCase -> NombreDeClase
+        snake_case -> nombre_de_clase
+        keb-case -> nombre-de-clase
+
+        Para CSS -> snake_case no es valido (no lo acepta la sintaxis), y se suele utilizar en la industria keb-case o cameCase. 
+        */
+
+        .miFirstClass{
+            color: rgb(9, 255, 0);
+        }
+        /* Un selector de CLASE se aplica sobre todos los elementos que tengan el atributo CLASS con el nombre de la clase */
+
+        .miSegundaClase{
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .laTercera{
+            background-color: cornflowerblue;
+        }
+
+        
+        /* HASTA ACA */
+    </style>
+    <!-- ACA VUELVE A SER HTML -->
+</head>
+<body>
+    <!-- ATRIBUTO STYLE -->
+    <p style="color: rgb(255, 0, 221);"> Hola </p>
+    <p style="color: rgb(255, 0, 234);"> Hola </p>
+    <p style="color: rgb(234, 0, 255);"> Hola </p>
+
+    <!-- IMPLEMENTANDO SELECTOR DE CLASE -->
+    <p class="miFirstClass laTercera"> hola </p>
+    <p class="miSegundaClase"> hola </p>
+    <p class="miFirstClass"> hola </p>
+    <p class="miFirstClass"> hola </p>
+    <p class="miSegundaClase"> hola </p>
+    <p class="laTercera"> hola </p>
+    <p class="miSegundaClase laTercera"> hola </p>
+
+
+    
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* 100% DE CSS - NADA DE HTML
+ACA NO QUIERO VER A NADIE ESCRIBIENDO CON <>
+*/
+
+/* Selector de elemento sobre los A */
+a{
+    /* Saco el subrayado */
+    text-decoration: none;
+    /* Cambio el color de la letra */
+    color: white;
+    /* Los agrando el tamaño */
+    font-size: 35px;
+    /* Cambio el color de fondo */
+    background-color: rgba(0, 0, 0, 0.616);
+    /* Grande el boton */
+    padding: 20px;
+    /* Los centro verticalmente a mano */
+    margin-top: 130px;
+    /* Redondeo los bordes */
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: rgba(250, 90, 202, 0.787);
+    color: rgb(0, 0, 0);
+}
+
+.izq{
+    float: left;
+}
+
+.der{
+    float: right;
+}
